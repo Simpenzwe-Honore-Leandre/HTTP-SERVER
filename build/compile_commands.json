@@ -1,0 +1,27 @@
+[
+{
+  "directory": "/home/simpenzwe_honore_leandre/M_PROJECTS/http-server/build",
+  "command": "/usr/bin/c++   -O2 -g -DNDEBUG -o CMakeFiles/serverX.dir/src/main.cc.o -c /home/simpenzwe_honore_leandre/M_PROJECTS/http-server/src/main.cc",
+  "file": "/home/simpenzwe_honore_leandre/M_PROJECTS/http-server/src/main.cc"
+},
+{
+  "directory": "/home/simpenzwe_honore_leandre/M_PROJECTS/http-server/build",
+  "command": "/usr/bin/c++   -O2 -g -DNDEBUG -o CMakeFiles/serverX.dir/src/server.cc.o -c /home/simpenzwe_honore_leandre/M_PROJECTS/http-server/src/server.cc",
+  "file": "/home/simpenzwe_honore_leandre/M_PROJECTS/http-server/src/server.cc"
+},
+{
+  "directory": "/home/simpenzwe_honore_leandre/M_PROJECTS/http-server/build",
+  "command": "/usr/bin/c++   -O2 -g -DNDEBUG -o CMakeFiles/serverX.dir/src/requestHandler.cc.o -c /home/simpenzwe_honore_leandre/M_PROJECTS/http-server/src/requestHandler.cc",
+  "file": "/home/simpenzwe_honore_leandre/M_PROJECTS/http-server/src/requestHandler.cc"
+},
+{
+  "directory": "/home/simpenzwe_honore_leandre/M_PROJECTS/http-server/build",
+  "command": "/usr/bin/c++   -O2 -g -DNDEBUG -o CMakeFiles/serverX.dir/src/client.cc.o -c /home/simpenzwe_honore_leandre/M_PROJECTS/http-server/src/client.cc",
+  "file": "/home/simpenzwe_honore_leandre/M_PROJECTS/http-server/src/client.cc"
+},
+{
+  "directory": "/home/simpenzwe_honore_leandre/M_PROJECTS/http-server/build",
+  "command": "/usr/bin/c++   -O2 -g -DNDEBUG -o CMakeFiles/server_test.dir/tests/server_test.cc.o -c /home/simpenzwe_honore_leandre/M_PROJECTS/http-server/tests/server_test.cc",
+  "file": "/home/simpenzwe_honore_leandre/M_PROJECTS/http-server/tests/server_test.cc"
+}
+]

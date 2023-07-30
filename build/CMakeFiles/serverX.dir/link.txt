@@ -1,0 +1,1 @@
+/usr/bin/c++ -O2 -g -DNDEBUG -rdynamic CMakeFiles/serverX.dir/src/main.cc.o CMakeFiles/serverX.dir/src/server.cc.o CMakeFiles/serverX.dir/src/requestHandler.cc.o CMakeFiles/serverX.dir/src/client.cc.o -o serverX 
