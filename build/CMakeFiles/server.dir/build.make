@@ -69,83 +69,67 @@ include CMakeFiles/server.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/server.dir/flags.make
 
-CMakeFiles/server.dir/src/main.cpp.o: CMakeFiles/server.dir/flags.make
-CMakeFiles/server.dir/src/main.cpp.o: ../src/main.cpp
-CMakeFiles/server.dir/src/main.cpp.o: CMakeFiles/server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/simpenzwe_honore_leandre/M_PROJECTS/http-server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/server.dir/src/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/server.dir/src/main.cpp.o -MF CMakeFiles/server.dir/src/main.cpp.o.d -o CMakeFiles/server.dir/src/main.cpp.o -c /home/simpenzwe_honore_leandre/M_PROJECTS/http-server/src/main.cpp
+CMakeFiles/server.dir/src/server.cc.o: CMakeFiles/server.dir/flags.make
+CMakeFiles/server.dir/src/server.cc.o: ../src/server.cc
+CMakeFiles/server.dir/src/server.cc.o: CMakeFiles/server.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/simpenzwe_honore_leandre/M_PROJECTS/http-server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/server.dir/src/server.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/server.dir/src/server.cc.o -MF CMakeFiles/server.dir/src/server.cc.o.d -o CMakeFiles/server.dir/src/server.cc.o -c /home/simpenzwe_honore_leandre/M_PROJECTS/http-server/src/server.cc
 
-CMakeFiles/server.dir/src/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/server.dir/src/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/simpenzwe_honore_leandre/M_PROJECTS/http-server/src/main.cpp > CMakeFiles/server.dir/src/main.cpp.i
+CMakeFiles/server.dir/src/server.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/server.dir/src/server.cc.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/simpenzwe_honore_leandre/M_PROJECTS/http-server/src/server.cc > CMakeFiles/server.dir/src/server.cc.i
 
-CMakeFiles/server.dir/src/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/server.dir/src/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/simpenzwe_honore_leandre/M_PROJECTS/http-server/src/main.cpp -o CMakeFiles/server.dir/src/main.cpp.s
+CMakeFiles/server.dir/src/server.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/server.dir/src/server.cc.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/simpenzwe_honore_leandre/M_PROJECTS/http-server/src/server.cc -o CMakeFiles/server.dir/src/server.cc.s
 
-CMakeFiles/server.dir/src/server.cpp.o: CMakeFiles/server.dir/flags.make
-CMakeFiles/server.dir/src/server.cpp.o: ../src/server.cpp
-CMakeFiles/server.dir/src/server.cpp.o: CMakeFiles/server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/simpenzwe_honore_leandre/M_PROJECTS/http-server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/server.dir/src/server.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/server.dir/src/server.cpp.o -MF CMakeFiles/server.dir/src/server.cpp.o.d -o CMakeFiles/server.dir/src/server.cpp.o -c /home/simpenzwe_honore_leandre/M_PROJECTS/http-server/src/server.cpp
+CMakeFiles/server.dir/src/ThreadPool.cc.o: CMakeFiles/server.dir/flags.make
+CMakeFiles/server.dir/src/ThreadPool.cc.o: ../src/ThreadPool.cc
+CMakeFiles/server.dir/src/ThreadPool.cc.o: CMakeFiles/server.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/simpenzwe_honore_leandre/M_PROJECTS/http-server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/server.dir/src/ThreadPool.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/server.dir/src/ThreadPool.cc.o -MF CMakeFiles/server.dir/src/ThreadPool.cc.o.d -o CMakeFiles/server.dir/src/ThreadPool.cc.o -c /home/simpenzwe_honore_leandre/M_PROJECTS/http-server/src/ThreadPool.cc
 
-CMakeFiles/server.dir/src/server.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/server.dir/src/server.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/simpenzwe_honore_leandre/M_PROJECTS/http-server/src/server.cpp > CMakeFiles/server.dir/src/server.cpp.i
+CMakeFiles/server.dir/src/ThreadPool.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/server.dir/src/ThreadPool.cc.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/simpenzwe_honore_leandre/M_PROJECTS/http-server/src/ThreadPool.cc > CMakeFiles/server.dir/src/ThreadPool.cc.i
 
-CMakeFiles/server.dir/src/server.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/server.dir/src/server.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/simpenzwe_honore_leandre/M_PROJECTS/http-server/src/server.cpp -o CMakeFiles/server.dir/src/server.cpp.s
+CMakeFiles/server.dir/src/ThreadPool.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/server.dir/src/ThreadPool.cc.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/simpenzwe_honore_leandre/M_PROJECTS/http-server/src/ThreadPool.cc -o CMakeFiles/server.dir/src/ThreadPool.cc.s
 
-CMakeFiles/server.dir/src/Threadpool.cpp.o: CMakeFiles/server.dir/flags.make
-CMakeFiles/server.dir/src/Threadpool.cpp.o: ../src/Threadpool.cpp
-CMakeFiles/server.dir/src/Threadpool.cpp.o: CMakeFiles/server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/simpenzwe_honore_leandre/M_PROJECTS/http-server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/server.dir/src/Threadpool.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/server.dir/src/Threadpool.cpp.o -MF CMakeFiles/server.dir/src/Threadpool.cpp.o.d -o CMakeFiles/server.dir/src/Threadpool.cpp.o -c /home/simpenzwe_honore_leandre/M_PROJECTS/http-server/src/Threadpool.cpp
+CMakeFiles/server.dir/src/requestHandler.cc.o: CMakeFiles/server.dir/flags.make
+CMakeFiles/server.dir/src/requestHandler.cc.o: ../src/requestHandler.cc
+CMakeFiles/server.dir/src/requestHandler.cc.o: CMakeFiles/server.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/simpenzwe_honore_leandre/M_PROJECTS/http-server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/server.dir/src/requestHandler.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/server.dir/src/requestHandler.cc.o -MF CMakeFiles/server.dir/src/requestHandler.cc.o.d -o CMakeFiles/server.dir/src/requestHandler.cc.o -c /home/simpenzwe_honore_leandre/M_PROJECTS/http-server/src/requestHandler.cc
 
-CMakeFiles/server.dir/src/Threadpool.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/server.dir/src/Threadpool.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/simpenzwe_honore_leandre/M_PROJECTS/http-server/src/Threadpool.cpp > CMakeFiles/server.dir/src/Threadpool.cpp.i
+CMakeFiles/server.dir/src/requestHandler.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/server.dir/src/requestHandler.cc.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/simpenzwe_honore_leandre/M_PROJECTS/http-server/src/requestHandler.cc > CMakeFiles/server.dir/src/requestHandler.cc.i
 
-CMakeFiles/server.dir/src/Threadpool.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/server.dir/src/Threadpool.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/simpenzwe_honore_leandre/M_PROJECTS/http-server/src/Threadpool.cpp -o CMakeFiles/server.dir/src/Threadpool.cpp.s
-
-CMakeFiles/server.dir/src/requestHandler.cpp.o: CMakeFiles/server.dir/flags.make
-CMakeFiles/server.dir/src/requestHandler.cpp.o: ../src/requestHandler.cpp
-CMakeFiles/server.dir/src/requestHandler.cpp.o: CMakeFiles/server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/simpenzwe_honore_leandre/M_PROJECTS/http-server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/server.dir/src/requestHandler.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/server.dir/src/requestHandler.cpp.o -MF CMakeFiles/server.dir/src/requestHandler.cpp.o.d -o CMakeFiles/server.dir/src/requestHandler.cpp.o -c /home/simpenzwe_honore_leandre/M_PROJECTS/http-server/src/requestHandler.cpp
-
-CMakeFiles/server.dir/src/requestHandler.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/server.dir/src/requestHandler.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/simpenzwe_honore_leandre/M_PROJECTS/http-server/src/requestHandler.cpp > CMakeFiles/server.dir/src/requestHandler.cpp.i
-
-CMakeFiles/server.dir/src/requestHandler.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/server.dir/src/requestHandler.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/simpenzwe_honore_leandre/M_PROJECTS/http-server/src/requestHandler.cpp -o CMakeFiles/server.dir/src/requestHandler.cpp.s
+CMakeFiles/server.dir/src/requestHandler.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/server.dir/src/requestHandler.cc.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/simpenzwe_honore_leandre/M_PROJECTS/http-server/src/requestHandler.cc -o CMakeFiles/server.dir/src/requestHandler.cc.s
 
 # Object files for target server
 server_OBJECTS = \
-"CMakeFiles/server.dir/src/main.cpp.o" \
-"CMakeFiles/server.dir/src/server.cpp.o" \
-"CMakeFiles/server.dir/src/Threadpool.cpp.o" \
-"CMakeFiles/server.dir/src/requestHandler.cpp.o"
+"CMakeFiles/server.dir/src/server.cc.o" \
+"CMakeFiles/server.dir/src/ThreadPool.cc.o" \
+"CMakeFiles/server.dir/src/requestHandler.cc.o"
 
 # External object files for target server
 server_EXTERNAL_OBJECTS =
 
-server: CMakeFiles/server.dir/src/main.cpp.o
-server: CMakeFiles/server.dir/src/server.cpp.o
-server: CMakeFiles/server.dir/src/Threadpool.cpp.o
-server: CMakeFiles/server.dir/src/requestHandler.cpp.o
-server: CMakeFiles/server.dir/build.make
-server: CMakeFiles/server.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/simpenzwe_honore_leandre/M_PROJECTS/http-server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable server"
+../bin/server: CMakeFiles/server.dir/src/server.cc.o
+../bin/server: CMakeFiles/server.dir/src/ThreadPool.cc.o
+../bin/server: CMakeFiles/server.dir/src/requestHandler.cc.o
+../bin/server: CMakeFiles/server.dir/build.make
+../bin/server: CMakeFiles/server.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/simpenzwe_honore_leandre/M_PROJECTS/http-server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable ../bin/server"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/server.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-CMakeFiles/server.dir/build: server
+CMakeFiles/server.dir/build: ../bin/server
 .PHONY : CMakeFiles/server.dir/build
 
 CMakeFiles/server.dir/clean:

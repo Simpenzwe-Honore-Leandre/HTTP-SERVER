@@ -26,7 +26,8 @@
 /home/simpenzwe_honore_leandre/M_PROJECTS/http-server/build/CMakeFiles/ContinuousCoverage.dir
 /home/simpenzwe_honore_leandre/M_PROJECTS/http-server/build/CMakeFiles/ContinuousMemCheck.dir
 /home/simpenzwe_honore_leandre/M_PROJECTS/http-server/build/CMakeFiles/ContinuousSubmit.dir
-/home/simpenzwe_honore_leandre/M_PROJECTS/http-server/build/CMakeFiles/serverX.dir
+/home/simpenzwe_honore_leandre/M_PROJECTS/http-server/build/CMakeFiles/server.dir
+/home/simpenzwe_honore_leandre/M_PROJECTS/http-server/build/CMakeFiles/client.dir
 /home/simpenzwe_honore_leandre/M_PROJECTS/http-server/build/CMakeFiles/server_test.dir
 /home/simpenzwe_honore_leandre/M_PROJECTS/http-server/build/CMakeFiles/package.dir
 /home/simpenzwe_honore_leandre/M_PROJECTS/http-server/build/CMakeFiles/package_source.dir

@@ -1,4 +1,4 @@
-#pragma once
+#include<condition_variable>
 #include<sys/socket.h>
 #include<netinet/in.h>
 #include<arpa/inet.h>
@@ -6,16 +6,17 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include<string.h>
-#include "requestHandler.cc"
+#include "requestHandler.h"
 #include "ThreadPool.h"
 #include<iostream>
 #include<thread>
 
-#define PORT 8081
+#define PORT 8080
 #define SOCKET_INIT_ERROR "Socket creation failed!"
 #define BIND_ERROR "Bind failed!"
 #define LISTEN_ERROR "Listen failed!"
 #define ACCEPT_ERROR "Accept failed!"
+
 int main(int argc, char const *argv[])
 {   
     int num_threads;
@@ -27,14 +28,15 @@ int main(int argc, char const *argv[])
     {
         num_threads = 2;
     }
-    ThreadPool thread_pool(num_threads/3);
+    ThreadPool thread_pool(num_threads);
     int socket_fd, new_socket_fd;
     long valread;
     struct sockaddr_in address;
     int addrlen = sizeof(address);
 
-    if((socket_fd = socket(AF_INET, SOCK_STREAM, 0)) < 0)
+    if((socket_fd = socket(AF_INET, SOCK_STREAM, 0)) == 0)
     {
+        printf("%d",socket_fd);
         perror(SOCKET_INIT_ERROR);
         exit(EXIT_FAILURE);
     }
@@ -55,7 +57,7 @@ int main(int argc, char const *argv[])
         perror(LISTEN_ERROR);
         exit(EXIT_FAILURE);
     }
-
+    printf("Server is listening on port: %d\n",PORT);
     while(true)
     {   
         //a new socket used by connecting client is returned 
@@ -65,7 +67,6 @@ int main(int argc, char const *argv[])
             perror(ACCEPT_ERROR);
             exit(EXIT_FAILURE);
         }
-
         thread_pool.queueWork([new_socket_fd]
         {
             handleRequest(new_socket_fd);

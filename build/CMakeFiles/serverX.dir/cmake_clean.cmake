@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/serverX.dir/src/ThreadPool.cc.o"
+  "CMakeFiles/serverX.dir/src/ThreadPool.cc.o.d"
   "CMakeFiles/serverX.dir/src/client.cc.o"
   "CMakeFiles/serverX.dir/src/client.cc.o.d"
-  "CMakeFiles/serverX.dir/src/main.cc.o"
-  "CMakeFiles/serverX.dir/src/main.cc.o.d"
   "CMakeFiles/serverX.dir/src/requestHandler.cc.o"
   "CMakeFiles/serverX.dir/src/requestHandler.cc.o.d"
   "CMakeFiles/serverX.dir/src/server.cc.o"

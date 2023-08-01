@@ -1,1 +1,1 @@
-/usr/bin/c++ -O2 -g -DNDEBUG -rdynamic CMakeFiles/server.dir/src/main.cpp.o CMakeFiles/server.dir/src/server.cpp.o CMakeFiles/server.dir/src/Threadpool.cpp.o CMakeFiles/server.dir/src/requestHandler.cpp.o -o server 
+/usr/bin/c++ -O2 -g -DNDEBUG -rdynamic CMakeFiles/server.dir/src/server.cc.o CMakeFiles/server.dir/src/ThreadPool.cc.o CMakeFiles/server.dir/src/requestHandler.cc.o -o ../bin/server 

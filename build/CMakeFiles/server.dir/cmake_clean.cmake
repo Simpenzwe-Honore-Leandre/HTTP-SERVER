@@ -1,14 +1,12 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/server.dir/src/Threadpool.cpp.o"
-  "CMakeFiles/server.dir/src/Threadpool.cpp.o.d"
-  "CMakeFiles/server.dir/src/main.cpp.o"
-  "CMakeFiles/server.dir/src/main.cpp.o.d"
-  "CMakeFiles/server.dir/src/requestHandler.cpp.o"
-  "CMakeFiles/server.dir/src/requestHandler.cpp.o.d"
-  "CMakeFiles/server.dir/src/server.cpp.o"
-  "CMakeFiles/server.dir/src/server.cpp.o.d"
-  "server"
-  "server.pdb"
+  "../bin/server"
+  "../bin/server.pdb"
+  "CMakeFiles/server.dir/src/ThreadPool.cc.o"
+  "CMakeFiles/server.dir/src/ThreadPool.cc.o.d"
+  "CMakeFiles/server.dir/src/requestHandler.cc.o"
+  "CMakeFiles/server.dir/src/requestHandler.cc.o.d"
+  "CMakeFiles/server.dir/src/server.cc.o"
+  "CMakeFiles/server.dir/src/server.cc.o.d"
 )
 
 # Per-language clean rules from dependency scanning.

@@ -511,17 +511,30 @@ ContinuousSubmit/fast:
 .PHONY : ContinuousSubmit/fast
 
 #=============================================================================
-# Target rules for targets named serverX
+# Target rules for targets named server
 
 # Build rule for target.
-serverX: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 serverX
-.PHONY : serverX
+server: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 server
+.PHONY : server
 
 # fast build rule for target.
-serverX/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/serverX.dir/build.make CMakeFiles/serverX.dir/build
-.PHONY : serverX/fast
+server/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/build
+.PHONY : server/fast
+
+#=============================================================================
+# Target rules for targets named client
+
+# Build rule for target.
+client: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 client
+.PHONY : client
+
+# fast build rule for target.
+client/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/build
+.PHONY : client/fast
 
 #=============================================================================
 # Target rules for targets named server_test
@@ -536,12 +549,36 @@ server_test/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/server_test.dir/build.make CMakeFiles/server_test.dir/build
 .PHONY : server_test/fast
 
+src/ThreadPool.o: src/ThreadPool.cc.o
+.PHONY : src/ThreadPool.o
+
+# target to build an object file
+src/ThreadPool.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/ThreadPool.cc.o
+.PHONY : src/ThreadPool.cc.o
+
+src/ThreadPool.i: src/ThreadPool.cc.i
+.PHONY : src/ThreadPool.i
+
+# target to preprocess a source file
+src/ThreadPool.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/ThreadPool.cc.i
+.PHONY : src/ThreadPool.cc.i
+
+src/ThreadPool.s: src/ThreadPool.cc.s
+.PHONY : src/ThreadPool.s
+
+# target to generate assembly for a file
+src/ThreadPool.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/ThreadPool.cc.s
+.PHONY : src/ThreadPool.cc.s
+
 src/client.o: src/client.cc.o
 .PHONY : src/client.o
 
 # target to build an object file
 src/client.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/serverX.dir/build.make CMakeFiles/serverX.dir/src/client.cc.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/src/client.cc.o
 .PHONY : src/client.cc.o
 
 src/client.i: src/client.cc.i
@@ -549,7 +586,7 @@ src/client.i: src/client.cc.i
 
 # target to preprocess a source file
 src/client.cc.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/serverX.dir/build.make CMakeFiles/serverX.dir/src/client.cc.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/src/client.cc.i
 .PHONY : src/client.cc.i
 
 src/client.s: src/client.cc.s
@@ -557,39 +594,15 @@ src/client.s: src/client.cc.s
 
 # target to generate assembly for a file
 src/client.cc.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/serverX.dir/build.make CMakeFiles/serverX.dir/src/client.cc.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/src/client.cc.s
 .PHONY : src/client.cc.s
-
-src/main.o: src/main.cc.o
-.PHONY : src/main.o
-
-# target to build an object file
-src/main.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/serverX.dir/build.make CMakeFiles/serverX.dir/src/main.cc.o
-.PHONY : src/main.cc.o
-
-src/main.i: src/main.cc.i
-.PHONY : src/main.i
-
-# target to preprocess a source file
-src/main.cc.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/serverX.dir/build.make CMakeFiles/serverX.dir/src/main.cc.i
-.PHONY : src/main.cc.i
-
-src/main.s: src/main.cc.s
-.PHONY : src/main.s
-
-# target to generate assembly for a file
-src/main.cc.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/serverX.dir/build.make CMakeFiles/serverX.dir/src/main.cc.s
-.PHONY : src/main.cc.s
 
 src/requestHandler.o: src/requestHandler.cc.o
 .PHONY : src/requestHandler.o
 
 # target to build an object file
 src/requestHandler.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/serverX.dir/build.make CMakeFiles/serverX.dir/src/requestHandler.cc.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/requestHandler.cc.o
 .PHONY : src/requestHandler.cc.o
 
 src/requestHandler.i: src/requestHandler.cc.i
@@ -597,7 +610,7 @@ src/requestHandler.i: src/requestHandler.cc.i
 
 # target to preprocess a source file
 src/requestHandler.cc.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/serverX.dir/build.make CMakeFiles/serverX.dir/src/requestHandler.cc.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/requestHandler.cc.i
 .PHONY : src/requestHandler.cc.i
 
 src/requestHandler.s: src/requestHandler.cc.s
@@ -605,7 +618,7 @@ src/requestHandler.s: src/requestHandler.cc.s
 
 # target to generate assembly for a file
 src/requestHandler.cc.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/serverX.dir/build.make CMakeFiles/serverX.dir/src/requestHandler.cc.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/requestHandler.cc.s
 .PHONY : src/requestHandler.cc.s
 
 src/server.o: src/server.cc.o
@@ -613,7 +626,7 @@ src/server.o: src/server.cc.o
 
 # target to build an object file
 src/server.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/serverX.dir/build.make CMakeFiles/serverX.dir/src/server.cc.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/server.cc.o
 .PHONY : src/server.cc.o
 
 src/server.i: src/server.cc.i
@@ -621,7 +634,7 @@ src/server.i: src/server.cc.i
 
 # target to preprocess a source file
 src/server.cc.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/serverX.dir/build.make CMakeFiles/serverX.dir/src/server.cc.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/server.cc.i
 .PHONY : src/server.cc.i
 
 src/server.s: src/server.cc.s
@@ -629,7 +642,7 @@ src/server.s: src/server.cc.s
 
 # target to generate assembly for a file
 src/server.cc.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/serverX.dir/build.make CMakeFiles/serverX.dir/src/server.cc.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/server.cc.s
 .PHONY : src/server.cc.s
 
 tests/server_test.o: tests/server_test.cc.o
@@ -695,14 +708,15 @@ help:
 	@echo "... NightlySubmit"
 	@echo "... NightlyTest"
 	@echo "... NightlyUpdate"
-	@echo "... serverX"
+	@echo "... client"
+	@echo "... server"
 	@echo "... server_test"
+	@echo "... src/ThreadPool.o"
+	@echo "... src/ThreadPool.i"
+	@echo "... src/ThreadPool.s"
 	@echo "... src/client.o"
 	@echo "... src/client.i"
 	@echo "... src/client.s"
-	@echo "... src/main.o"
-	@echo "... src/main.i"
-	@echo "... src/main.s"
 	@echo "... src/requestHandler.o"
 	@echo "... src/requestHandler.i"
 	@echo "... src/requestHandler.s"
