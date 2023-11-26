@@ -19,16 +19,16 @@
 
 int main(int argc, char const *argv[])
 {   
-    int num_threads;
-    if((num_threads = std::thread::hardware_concurrency()) == 0)
-    {
-        num_threads = 1;
-    }
-    if(num_threads > 2)
-    {
-        num_threads = 2;
-    }
-    ThreadPool thread_pool(num_threads);
+    // int num_threads;
+    // if((num_threads = std::thread::hardware_concurrency()) == 0)
+    // {
+    //     num_threads = 1;
+    // }
+    // if(num_threads > 2)
+    // {
+    //     num_threads = 2;
+    // }
+    ThreadPool thread_pool(4);
     int socket_fd, new_socket_fd;
     long valread;
     struct sockaddr_in address;
@@ -36,14 +36,14 @@ int main(int argc, char const *argv[])
 
     if((socket_fd = socket(AF_INET, SOCK_STREAM, 0)) == 0)
     {
-        printf("%d",socket_fd);
+        printf("On socket file descriptor: %d",socket_fd);
         perror(SOCKET_INIT_ERROR);
         exit(EXIT_FAILURE);
     }
     address.sin_family = AF_INET;
     address.sin_port = htons(PORT);
     address.sin_addr.s_addr = htonl(INADDR_ANY);
-    memset(address.sin_zero,'\0',sizeof(address.sin_zero));
+    memset(&address.sin_zero,0,sizeof(address.sin_zero));
 
     if(bind(socket_fd,(struct sockaddr *)&address, sizeof(address)) < 0)
     {
@@ -67,7 +67,7 @@ int main(int argc, char const *argv[])
             perror(ACCEPT_ERROR);
             exit(EXIT_FAILURE);
         }
-        thread_pool.queueWork([new_socket_fd]
+        thread_pool.queueWork([=]()
         {
             handleRequest(new_socket_fd);
         });

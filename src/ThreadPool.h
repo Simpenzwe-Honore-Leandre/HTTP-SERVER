@@ -11,7 +11,7 @@
 class ThreadPool{
     public:
     ThreadPool(int num_threads);
-    void queueWork(std::function<void()> task);
+    void queueWork(const std::function<void()> &task);
     ~ThreadPool();
     private:
     std::vector<std::thread> threads;

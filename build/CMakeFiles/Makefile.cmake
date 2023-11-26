@@ -83,5 +83,4 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/ContinuousSubmit.dir/DependInfo.cmake"
   "CMakeFiles/server.dir/DependInfo.cmake"
   "CMakeFiles/client.dir/DependInfo.cmake"
-  "CMakeFiles/server_test.dir/DependInfo.cmake"
   )

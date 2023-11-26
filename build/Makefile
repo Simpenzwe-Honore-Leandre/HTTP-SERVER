@@ -536,19 +536,6 @@ client/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/build
 .PHONY : client/fast
 
-#=============================================================================
-# Target rules for targets named server_test
-
-# Build rule for target.
-server_test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 server_test
-.PHONY : server_test
-
-# fast build rule for target.
-server_test/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server_test.dir/build.make CMakeFiles/server_test.dir/build
-.PHONY : server_test/fast
-
 src/ThreadPool.o: src/ThreadPool.cc.o
 .PHONY : src/ThreadPool.o
 
@@ -645,30 +632,6 @@ src/server.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/server.cc.s
 .PHONY : src/server.cc.s
 
-tests/server_test.o: tests/server_test.cc.o
-.PHONY : tests/server_test.o
-
-# target to build an object file
-tests/server_test.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server_test.dir/build.make CMakeFiles/server_test.dir/tests/server_test.cc.o
-.PHONY : tests/server_test.cc.o
-
-tests/server_test.i: tests/server_test.cc.i
-.PHONY : tests/server_test.i
-
-# target to preprocess a source file
-tests/server_test.cc.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server_test.dir/build.make CMakeFiles/server_test.dir/tests/server_test.cc.i
-.PHONY : tests/server_test.cc.i
-
-tests/server_test.s: tests/server_test.cc.s
-.PHONY : tests/server_test.s
-
-# target to generate assembly for a file
-tests/server_test.cc.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server_test.dir/build.make CMakeFiles/server_test.dir/tests/server_test.cc.s
-.PHONY : tests/server_test.cc.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -710,7 +673,6 @@ help:
 	@echo "... NightlyUpdate"
 	@echo "... client"
 	@echo "... server"
-	@echo "... server_test"
 	@echo "... src/ThreadPool.o"
 	@echo "... src/ThreadPool.i"
 	@echo "... src/ThreadPool.s"
@@ -723,9 +685,6 @@ help:
 	@echo "... src/server.o"
 	@echo "... src/server.i"
 	@echo "... src/server.s"
-	@echo "... tests/server_test.o"
-	@echo "... tests/server_test.i"
-	@echo "... tests/server_test.s"
 .PHONY : help
 
 

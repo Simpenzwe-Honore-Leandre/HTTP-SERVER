@@ -3,6 +3,7 @@
 #include<stdlib.h>
 #include<stdio.h>
 #include<arpa/inet.h>
+#include<string>
 #include<string.h>
 #define PORT 8080
 #define SOCKET_INIT_ERROR "Socket creation failed!"
@@ -12,8 +13,8 @@ int main(int argc,char const *argv[])
     int socket_fd;
     long valread;
     struct sockaddr_in address;
-    char* hello = "Hello from client!";
-    char Buffer[30000] = {0};
+    std::string hello = "Hello from client!";
+    char Buffer[1024] = {0};
 
     if((socket_fd = socket(AF_INET,SOCK_STREAM,0))< 0)
     {
@@ -37,9 +38,9 @@ int main(int argc,char const *argv[])
         exit(EXIT_FAILURE);
     }
 
-    send(socket_fd,hello,sizeof(hello),0);
+    send(socket_fd,hello.c_str(),sizeof(hello),0);
     printf("client message sent!\n");    
-    valread = recv(socket_fd,Buffer,30000,0);
+    valread = recv(socket_fd,Buffer,1024,0);
     printf("%s\n",Buffer);
     return 0;
 

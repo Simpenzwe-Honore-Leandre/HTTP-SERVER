@@ -44,8 +44,7 @@
 						26,
 						27,
 						28,
-						29,
-						30
+						29
 					]
 				}
 			],
@@ -89,8 +88,7 @@
 						26,
 						27,
 						28,
-						29,
-						30
+						29
 					]
 				}
 			],
@@ -304,13 +302,6 @@
 					"id" : "server::@6890427a1f51a3e7e1df",
 					"jsonFile" : "target-server-RelWithDebInfo-2855533c0ca31133d1ee.json",
 					"name" : "server",
-					"projectIndex" : 0
-				},
-				{
-					"directoryIndex" : 0,
-					"id" : "server_test::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-server_test-RelWithDebInfo-ed6b4af44e1c99420b93.json",
-					"name" : "server_test",
 					"projectIndex" : 0
 				}
 			]

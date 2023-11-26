@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Site BuildName="Linux-c++"
+	BuildStamp="20231121-1538-Experimental"
+	Name="honore"
+	Generator="ctest-3.22.1"
+	CompilerName="/usr/bin/c++"
+	CompilerVersion="11.4.0"
+	OSName="Linux"
+	Hostname="honore"
+	OSRelease="6.5.6-76060506-generic"
+	OSVersion="#202310061235~1697396945~22.04~9283e32 SMP PREEMPT_DYNAMIC Sun O"
+	OSPlatform="x86_64"
+	Is64Bits="1"
+	VendorString="GenuineIntel"
+	VendorID="Intel Corporation"
+	FamilyID="6"
+	ModelID="61"
+	ProcessorCacheSize="3072"
+	NumberOfLogicalCPU="4"
+	NumberOfPhysicalCPU="2"
+	TotalVirtualMemory="7853"
+	TotalPhysicalMemory="7853"
+	LogicalProcessorsPerPhysical="2"
+	ProcessorClockFrequency="1900.21"
+	>
+	<Testing>
+		<StartDateTime>Nov 21 21:08 IST</StartDateTime>
+		<StartTestTime>1700581103</StartTestTime>
+		<TestList/>
+		<EndDateTime>Nov 21 21:08 IST</EndDateTime>
+		<EndTestTime>1700581103</EndTestTime>
+		<ElapsedMinutes>0</ElapsedMinutes>
+	</Testing>
+</Site>

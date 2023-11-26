@@ -15,7 +15,7 @@ ThreadPool::ThreadPool(int num_threads) : done(false)
                     this->condition.wait(lock, [this]{return this->done || !this->tasks.empty();});
                     if(this->done and this->tasks.empty())
                     {
-                        //exit loop and thread, destructor will be called
+                        //exit loop and thread, threadpool destructor will be called
                         return;
                     }
                     task = std::move(this->tasks.front());
@@ -27,7 +27,7 @@ ThreadPool::ThreadPool(int num_threads) : done(false)
     }
 }
 
-void ThreadPool::queueWork(std::function<void()> task)
+void ThreadPool::queueWork(const std::function<void()> &task)
 {
     {
         //aquire lock and push task into queue
